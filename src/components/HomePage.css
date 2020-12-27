@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Crazy Metro';
+  src: url('/Users/jinien/Documents/Développement/Projet 2/P4_ohlbaum_julien/src/asset/Crazy_Metro.otf') format('otf');
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap%22%27');
+  }
+  
+  .header {
+    margin-top: 0;
+  }
+  
+  .container-homepage {
+    text-align: center;
+    margin-top: 15%;
+  }
+
+  .intro-homepage {
+    color: white;
+    width: 40%;
+    margin: auto;
+}
+
+  .text-homepage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5em;
+  
+  }
+
+  
+  .arrow {
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .arrow {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 3px solid#aa00ff;
+    border-right: 3px solid #aa00ff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
+    }
+  }
+
+  @media all and (max-device-width: 480px)
+{
+  .logo-homepage {
+    width: 300px;
+  }
+
+  .text-homepage {
+    font-size: 2em;
+  }
+
+  .intro-homepage {
+    width: 67%;
+}
+
+}

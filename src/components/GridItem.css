@@ -1,0 +1,30 @@
+.grid-item {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+
+.hoveredItem {
+    display: flex;
+    align-items: center;
+    font-family: 'system-ui', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 3em;
+    color: #aa00ff;
+    animation: fade 0.7s ease;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+}
+
+
+.hoveredImage {
+    display: none;
+}
+
